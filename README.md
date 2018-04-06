@@ -11,6 +11,7 @@ supported environment properties:
 use configuration file like below (saved as log4j2.xml and run jar) to save all messages into log.txt.
 java -Dfile.encoding=UTF-8 -Dlog4j.configurationFile=log4j2.xml -jar kafkaclient-consumer-1.0.0-SNAPSHOT-jar-with-dependencies.jar
 
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="WARN">
     <Properties>
@@ -34,5 +35,5 @@ java -Dfile.encoding=UTF-8 -Dlog4j.configurationFile=log4j2.xml -jar kafkaclient
         </Root>
     </Loggers>
 </Configuration>
-
+```
 
