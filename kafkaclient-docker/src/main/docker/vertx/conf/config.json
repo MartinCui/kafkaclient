@@ -1,0 +1,19 @@
+{
+  "hk2_binder": [
+    "com.eflabs.vertx.storm.deploy.hk2.DeployBinder"
+  ],
+
+  "deploy": {
+    "jar_name": "${topology.fat.jar.name}"
+  },
+
+  "dependencies": {
+    "http": {
+      "storm-deployer": {
+        "host": "storm-deployer-admin",
+        "port": 80,
+        "path": "/health"
+      }
+    }
+  }
+}

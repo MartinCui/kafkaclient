@@ -1,0 +1,14 @@
+{
+  "registryName": "labs-registry",
+  "jmxEnabled": true,
+  "jmxDomain": "com.eflabs",
+
+  "monitoredHttpServerUris": [
+  ],
+
+  "monitoredHttpClientUris": [
+  ],
+
+  "monitoredEventBusHandlers": [
+  ]
+}

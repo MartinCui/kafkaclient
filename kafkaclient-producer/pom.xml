@@ -4,14 +4,14 @@
 
     <parent>
         <groupId>com.martincui</groupId>
-        <artifactId>kafkaclient-parent</artifactId>
+        <artifactId>kafkaclient</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>kafkaclient-consumer</artifactId>
+    <artifactId>kafkaclient-producer</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>kafkaclient-consumer</name>
+    <name>kafkaclient-producer</name>
 
     <dependencies>
         <dependency>
@@ -63,7 +63,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>com.martincui.kafkaclient.consumer.App</mainClass>
+                            <mainClass>com.martincui.kafkaclient.producer.App</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -78,7 +78,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>com.martincui.kafkaclient.consumer.App</mainClass>
+                            <mainClass>com.martincui.kafkaclient.producer.App</mainClass>
                         </manifest>
                     </archive>
                     <!--<appendAssemblyId>false</appendAssemblyId>-->

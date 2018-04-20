@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="WARN">
+
+    <Properties>
+        <property name="LOG4J_ROOT_LEVEL">debug</property>
+    </Properties>
+
+    <appenders>
+        <console name="console" target="SYSTEM_OUT">
+            <jsonLayout compact="true" eventEol="true" complete="false" properties="true"/>
+        </console>
+
+        <async name="app" blocking="false" bufferSize="256">
+            <appenderRef ref="console"/>
+        </async>
+    </appenders>
+
+    <loggers>
+        <logger name="org.apache.http" level="info" additivity="false">
+            <appenderRef ref="app"/>
+        </logger>
+
+        <logger name="org.apache.zookeeper" level="info" additivity="false">
+            <appenderRef ref="app"/>
+        </logger>
+
+        <logger name="org.apache.kafka" level="info" additivity="false">
+            <appenderRef ref="app"/>
+        </logger>
+
+        <logger name="kafka" level="info" additivity="false">
+            <appenderRef ref="app"/>
+        </logger>
+
+        <root level="${env:LOG4J_ROOT_LEVEL}">
+            <appenderRef ref="app"/>
+        </root>
+    </loggers>
+
+</configuration>

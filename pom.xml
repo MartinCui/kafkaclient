@@ -2,12 +2,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.martincui</groupId>
-    <artifactId>kafkaclient-parent</artifactId>
+    <artifactId>kafkaclient</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>kafkaclient-parent</name>
+    <name>kafkaclient</name>
     <modules>
-        <module>consumer</module>
+        <module>kafkaclient-consumer</module>
+        <module>kafkaclient-producer</module>
+        <module>kafkaclient-docker</module>
     </modules>
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
